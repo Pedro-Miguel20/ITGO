@@ -18,7 +18,7 @@
 
 # Exemplificando o código 👨‍💻
 
-~~~
+~~~php
 class db_class
 {
     // Informações para a conexão ao Banco de Dados
