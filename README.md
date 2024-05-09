@@ -17,7 +17,7 @@
   - *MariaDB/MySQL*
 
 # Exemplificando o código 👨‍💻
-
+## Classe do Banco de Dados
 ~~~php
 class db_class
 {
@@ -48,6 +48,7 @@ class db_class
 }
 ~~~
 
+## Classe do Formulário
 ~~~php
 class form_class
 {
@@ -55,6 +56,7 @@ class form_class
 }
 ~~~
 
+Função do Login
 ~~~php
 public function login_function()
 {
@@ -104,6 +106,39 @@ public function login_function()
                 // Finalizando o script para evitar execução adicional
                 exit();
             }
+        }
+    }
+}
+~~~
+
+Função de Cadastro do Usuário
+~~~php
+public function sign_function()
+{
+    // Instanciando a classe de Banco de Dados
+    $db = new db_class();
+    // Armazenando a conexão com o banco de dados na variável $conn
+    $conn = $db->get_connection();
+    
+    // Verificando se os campos do formulário foram enviados
+    if(isset($_POST["user-sign-name"], $_POST["password-sign-name"], $_POST["confirm-password-sign-name"], $_POST["submit-sign-name"]))
+    {
+        // Armazenando os valores enviados via POST
+        $post_username_sign = $_POST["user-sign-name"];
+        $post_password_sign = $_POST["password-sign-name"];
+        $post_conpassword_sign = $_POST["confirm-password-sign-name"];
+        $post_submit_sign = $_POST["submit-sign-name"];
+        
+        // Verificando se as senhas fornecidas correspondem
+        if($post_password_sign === $post_conpassword_sign)
+        {
+            // Gerando um hash seguro para a senha
+            $password_hash_sign = password_hash($post_password_sign, PASSWORD_DEFAULT);
+
+            // Preparando e executando uma instrução preparada para inserir os dados do usuário no Banco de Dados
+            $stmt = $conn->prepare("INSERT INTO User(username, password) VALUES(?, ?)");
+            $stmt->bind_param("ss", $post_username_sign, $password_hash_sign);
+            $stmt->execute();
         }
     }
 }
