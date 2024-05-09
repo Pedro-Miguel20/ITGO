@@ -5,7 +5,6 @@
 # Do que se trata o ITGO? 🤔
 
 ***<p>Se você acabou de aterrissar neste repositório, permita-me apresentar o ITGO. Este é um projeto que está em desenvolvimento há quase mais de um ano, passando por diversas modificações e ajustes ao longo do caminho.</p>***
-  - *<p>Para você que está se perguntando o porque de um ano inteiro fazendo um site, saiba que todo esse projeto foi descontinuado e continuado diversas vezes devido a falta de conhecimento.</p>*
 ***<p>Em resumo, este repositório representa um projeto de website que tem como principal objetivo funcionar como uma plataforma ou rede social. Neste espaço, você poderá armazenar seus projetos e compartilhá-los por meio de um feed público.</p>***
 ***<p>Este projeto está sendo desenvolvido com foco no aprendizado</p>***
 
