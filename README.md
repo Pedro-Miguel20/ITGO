@@ -9,10 +9,10 @@
 ***<p>Este projeto está sendo desenvolvido com ênfase no aprendizado.</p>***
 
 # Requisitos para rodar o projeto ⚙️
+Aqui está os requisitos para rodar o projeto em sua máquina:
 
-PHP =< 8.0
-MariaDB/MySQL
-
+  - PHP =< 8.0
+  - MariaDB/MySQL
 
 That's a project that for many times we struggled with, but we will try again, unfortunately, the whole project will be documented in Portuguese.
 
