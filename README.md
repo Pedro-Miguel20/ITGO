@@ -18,6 +18,6 @@
 
 # Exemplificando o código 👨‍💻
 
-ˋ
-DOCTYPE html
+~~~
+html
 ~~~
