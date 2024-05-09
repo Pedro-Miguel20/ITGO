@@ -18,7 +18,6 @@
 
 # Exemplificando o código 👨‍💻
 
-ˋˋˋ
-asdasdasd
-
-ˋˋˋ
+ˋ
+DOCTYPE html
+~~~
