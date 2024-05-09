@@ -19,5 +19,31 @@
 # Exemplificando o código 👨‍💻
 
 ~~~
-html
+class db_class
+{
+    // Informações para a conexão ao Banco de Dados
+    protected $servername = "YourServername";
+    protected $user = "YourUser";
+    protected $password = "YourPassword";
+    protected $database = "YourDatabase"; 
+
+    // Váriavel que armazena a conexão com o Banco de Dados
+    protected $conn;
+
+    // Essa é uma Função Construtora ele é chamado automaticamente quando um objeto da classe é instanciado.
+    public function __construct()
+    {
+        // Aqui ocorre a conexão com o Banco de Dados com as informações passadas acima
+        $this->conn = new mysqli($this->servername, $this->user, $this->password, $this->database);
+
+        // Retorna mensagem de erro caso não se conecte com o Banco de Dados
+        if ($this->conn->connect_error) {
+            die("Erro de conexão: " . $this->conn->connect_error);
+        }
+    }
+    // Esta função permite que outros trechos de código obtenham acesso à conexão com o banco de dados. Ela simplesmente retorna o objeto de conexão $conn.
+    public function get_connection() {
+        return $this->conn;
+    }
+}
 ~~~
