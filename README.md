@@ -1,6 +1,8 @@
 # ITGO 🌈
 
 # Tópicos
+* [O que é o ITGO?](#o-que-é-o-itgo-)
+* [Requisitos para rodar o projeto](#requisitos-para-rodar-o-projeto-%EF%B8%8F)
 
 # O que é o ITGO? 🤔
 
