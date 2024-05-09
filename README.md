@@ -13,6 +13,11 @@
 # Requisitos para rodar o projeto ⚙️
 **Aqui está os requisitos para rodar o projeto em sua máquina:**
 
-  - *PHP 8.3.4 >= ;*
+  - *PHP >= 8.1*
   - *MariaDB/MySQL*
 
+# Exemplificando o código 👨‍💻
+
+`
+
+ˋˋˋ
